@@ -19,7 +19,7 @@ function Dashboard() {
     try {
 
       const res = await axios.get(
-        "http://localhost:5000/api/tasks",
+        "https://team-task-backend-l8od.onrender.com/api/tasks",
         {
           headers: {
             authorization: token,
@@ -38,7 +38,7 @@ function Dashboard() {
     try {
 
       await axios.post(
-        "http://localhost:5000/api/tasks/create",
+        "https://team-task-backend-l8od.onrender.com/api/tasks/create",
         {
           title,
           description,
@@ -63,7 +63,7 @@ function Dashboard() {
   try {
 
     await axios.put(
-      `http://localhost:5000/api/tasks/${id}`,
+      `https://team-task-backend-l8od.onrender.com/api/tasks/${id}`,
       {
         status: "completed",
       },
