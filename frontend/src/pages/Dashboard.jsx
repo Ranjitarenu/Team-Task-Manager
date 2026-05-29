@@ -87,7 +87,7 @@ function Dashboard() {
   try {
 
     await axios.delete(
-      `http://localhost:5000/api/tasks/${id}`,
+      `https://team-task-backend-l8od.onrender.com/api/tasks/${id}`,
       {
         headers: {
           authorization: token,

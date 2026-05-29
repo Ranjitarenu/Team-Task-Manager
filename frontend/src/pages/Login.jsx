@@ -14,7 +14,7 @@ function Login() {
     try {
 
       const res = await axios.post(
-        "https://team-task-backend-l8od.onrender.com",
+        "https://team-task-backend-l8od.onrender.com/api/auth/login",
         {
           email,
           password,
